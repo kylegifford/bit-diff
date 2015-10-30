@@ -27,12 +27,7 @@ import 'bit-tabs';
 can.Component.extend({
     tag: "bit-diff",
     template: template,
-    viewModel: BitDiffVM,
-    // events: {
-    //     inserted: function() {
-    //         this.viewModel.makeDiff();
-    //     }
-    // }
+    viewModel: BitDiffVM
 });
 
 export default BitDiffVM;
