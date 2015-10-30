@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Bit-Diff</title>
+  </head>
+  <body>
+    <!-- Template to load -->
+    <script type="text/stache" id="demo-html" can-autorender>
+      <can-import from="bit-diff" />
+      <bit-diff old-text="{{old}}" new-text="{{new}}"></bit-diff>
+    </script>
+
+    <!-- Loading Script -->
+    <script src="../node_modules/steal/steal.js" id="demo-source" main="can/view/autorender/">
+import $ from "jquery";
+import can from "can";
+
+var vm = $("#demo-html").viewModel();
+vm.attr({
+  old: `<html>
+  <head>
+    <title>My Site: {{title}}</title>
+    {{asset "css"}}
+    {{asset "html5shiv"}}
+  </head>
+  <body>
+    <can-import from="donejs-chat/styles.less!" />
+    <can-import from="donejs-chat/app" export-as="viewModel" />
+  </body>
+</html>`,
+  new: `<html>
+  <head>
+    <title>{{title}}</title>
+    {{asset "css"}}
+    {{asset "html5shiv"}}
+  </head>
+  <body>
+    <can-import from="bootstrap/less/bootstrap.less!" />
+    <can-import from="donejs-chat/styles.less!" />
+  </body>
+</html>`
+});
+    </script>
+  </body>
+</html>
+  

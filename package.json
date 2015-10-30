@@ -1,0 +1,36 @@
+{
+  "name": "bit-diff",
+  "version": "0.0.1",
+  "description": "CanJS diff component",
+  "main": "dist/cjs/bit-diff",
+  "dependencies": {
+    "bit-tabs": "^0.2.0",
+    "can": "2.3.1"
+  },
+  "devDependencies": {
+    "steal": "0.12.3",
+    "steal-tools": "0.12.1"
+  },
+  "system": {
+    "main": "bit-diff",
+    "directories": {
+      "lib": "src"
+    },
+    "transpiler": "babel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kylegifford/bit-diff"
+  },
+  "keywords": [
+    "CanJS",
+    "UI",
+    "Diff"
+  ],
+  "author": "Kyle Gifford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylegifford/bit-diff/issues"
+  },
+  "homepage": "https://github.com/kylegifford/bit-diff"
+}

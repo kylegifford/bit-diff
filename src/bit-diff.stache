@@ -1,0 +1,17 @@
+<div style="width:{{width}};height:{{height}}">
+<bit-tabs>
+	<bit-panel title="Current Text">
+		<textarea>{{oldText}}</textarea>
+	</bit-panel>
+	<bit-panel title="New Text">
+		<textarea>{{newText}}</textarea>
+	</bit-panel>
+	<bit-panel title="Diff">
+		{{output}}
+		<br />
+		<input type="radio" id="inline" can-value="mode" value="1" /> <label for="inline">Inline</label>
+		&nbsp;&nbsp;
+		<input type="radio" id="sbs" can-value="mode" value="0" /> <label for="sbs">Side-By-Side</label>
+	</bit-panel>
+</bit-tabs>
+</div>
